@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa Musical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contêiner principal -->
+    <div id="container">
+        <!-- Tela inicial com a mensagem e botão -->
+        <div id="surprise">
+            <h1>Clique aqui para descobrir a surpresa!</h1>
+            <button id="reveal-button">Descobrir</button>
+        </div>
+
+        <!-- Conteúdo principal com a letra e os botões -->
+        <div id="main-content" style="display: none;">
+            <h1>Depois que eu te conheci melhor, a minha cabeça fica assim:</h1>
+            <div id="lyrics">
+                <p id="current-lyric"></p>
+            </div>
+            <audio id="audio" src="tudo-que-voce-quiser-luan-santana-letra-legendado-belle-legendas_XmZrWAoY.mp3"></audio>
+            <button id="pause-button">Pausar</button>
+            <button id="restart-button" style="margin-left: 10px;">Recomeçar</button>
+        </div>
+
+        <!-- Mensagem final -->
+        <div id="end-message" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

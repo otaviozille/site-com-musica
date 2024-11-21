@@ -1,0 +1,90 @@
+/* Reset básico */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffe6e6, #ffcccc);
+  color: #333;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Container principal */
+#container {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+}
+
+/* Botões de interação */
+#reveal-button, #pause-button, #restart-button {
+  font-size: 1.2rem;
+  color: white;
+  background-color: #ff3366;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+#reveal-button:hover, #pause-button:hover, #restart-button:hover {
+  background-color: #e62e5c;
+}
+
+/* Ajuste de margens entre botões */
+#pause-button {
+  margin-right: 10px;
+}
+
+/* Título */
+h1 {
+  font-size: 1.8rem;
+  color: #ff3366;
+  margin-bottom: 10px;
+}
+
+/* Letra da música */
+#lyrics {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: #666;
+  min-height: 50px;
+}
+
+/* Mensagem final */
+#end-message {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #ff3366;
+}
+
+/* Animação dos corações */
+.heart {
+  position: absolute;
+  color: #ff3366;
+  font-size: 2rem;
+  animation: floatUp 4s ease-in-out infinite;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200px) scale(0.5);
+    opacity: 0;
+  }
+}
